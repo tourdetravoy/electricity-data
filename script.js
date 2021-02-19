@@ -91,7 +91,7 @@ info.update = function (props) {
   this._div.innerHTML +=  (props
     ? '<b>' + props.name + '</b><br />' + value + '</b><br />'
       + (props.year ? 'Most recent data: ' + props.year : '')
-      : 'Hover over nations');
+    : 'Hover over nations');
 };
 info.addTo(map);
 
