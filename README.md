@@ -2,7 +2,7 @@
 Leaflet thematic polygon (choropleth) map, with hover info window, using GeoJSON data
 
 ## Demo
-https://handsondataviz.github.io/leaflet-map-polygon-hover/
+https://tourdetravoy.github.io/electricity-data/
 
 ## Credits
 Code improvements by [@ilyankou](https://github.com/ilyankou); code functions by [@alvinschang](https://github.com/alvinschang) Connecticut Mirror http://ctmirror.org
