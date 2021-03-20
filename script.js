@@ -1,7 +1,7 @@
 // Edit the center point and zoom level
 var map = L.map('map', {
   center: [10,-20],
-  zoom: 2,
+  zoom: 5,
   zoomControl: false, // add later to reposition
   scrollWheelZoom: false
 });
@@ -115,28 +115,3 @@ legend.onAdd = function (map) {
 };
 legend.addTo(map);
 
-// Use in info.update if GeoJSON data contains null values, and if so, displays "--"
-function checkNull(val) {
-  if (val != null || val == "NaN") {
-    return comma(val);
-  } else {
-    return "--";
-  }
-}
-
-// Use in info.update if GeoJSON data needs to be displayed as a percentage
-function checkThePct(a,b) {
-  if (a != null && b != null) {
-    return Math.round(a/b*1000)/10 + "%";
-  } else {
-    return "--";
-  }
-}
-
-// Use in info.update if GeoJSON data needs to be displayed with commas (such as 123,456)
-function comma(val){
-  while (/(\d+)(\d{3})/.test(val.toString())){
-    val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
-  }
-  return val;
-}
