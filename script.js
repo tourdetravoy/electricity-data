@@ -8,7 +8,7 @@ var map = L.map('map', {
 
 // Edit links to your GitHub repo and data source credit
 map.attributionControl
-.setPrefix('View <a href="http://github.com/handsondataviz/leaflet-world-income-share">code and data on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+.setPrefix('View <a href="https://github.com/tourdetravoy/electricity-data">code and data on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 map.attributionControl.addAttribution('Income data &copy; <a href="https://wid.world/world/#sptinc_p99p100_z/US;FR;DE;CN;ZA;GB;WO/last/eu/k/p/yearly/s/false/5.070499999999999/30/curve/false/country">World Inequality Database</a>');
 
 // Basemap layer
