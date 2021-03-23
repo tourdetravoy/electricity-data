@@ -90,8 +90,8 @@ info.update = function (props) {
 
   this._div.innerHTML +=  (props
     ? '<b>' + props.name + '</b><br />' + value + '</b><br />'
-      + (props.year ? 'Most recent data: ' + props.year + '<br />') 
-      + (props.solar ? ' Solarpower: ' + props.solar + '%': '')                     
+      + (props.year ? 'Most recent data: ' + props.year + '</b><br />') 
+      + (props.solar ? ' Solarpower: ' + props.solar + '%' : '')                     
     : 'Hover over nations');
 };
 info.addTo(map);
